@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <title>Youtube.com Clone </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/header.css">
+    <link rel="stylesheet" type="text/css" href="../style/body.css">
+    <link rel="stylesheet" type="text/css" href="../style/general.css">
+    <link rel="stylesheet" type="text/css" href="../style/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!--Header-->
+<body>
+    <div class="header">
+        <div class="search-toggle" id="search-toggle">
+            <button class="back-button" type="button" onclick="collapsearch()">
+                <img src="..\images\body\icons\left-arrow.png">
+            </button>
+            <input type="text" placeholder="Search YouTube">
+            <button class="search">
+                <img src="..\images\body\icons\search-icon.png"></button>
+                <button>
+                    <img class="search-voice" src="..\images\body\icons\voice-search.png"></button>
+        </div>
+        
+        
+        <div class="left-section">
+            <div class="hamburger-menu">  
+            <img src="..\images\body\icons\hamburgermenu\hamburger.png" class="hamburger-icon">
+          </div>
+          <div class="youtubelogo">
+            <img src="..\images\body\icons\youtubelogo.png">
+          </div></div>
+          <div class="strech"></div>
+        <div class="middle-section">
+            
+                <input type="text" placeholder="Search" class="searchbar" id="search-bar">
+                <button class="search-button" type="button" onclick="togglesearch()">
+                    <img src="..\images\body\icons\search-icon.png">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voicesearch">
+                    <img src="..\images\body\icons\voice-search.png">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+        </div>
+        <div class="right-section">
+                <button class="create">
+                    <img src="..\images\body\icons\add-video.png">
+                    <div class="tooltip">Create</div>
+                </button>
+                <button class="notification">
+                    <div class="notification-no">8+</div>
+                    <img src="..\images\body\icons\bell.png">
+                    <div class="tooltip">Notification</div>
+                </button>
+                <button class="profile">
+                    <img src="..\images\body\icons\profileicon.jpg">
+                </button>
+        </div>
+          
+    </div>
+    <!--Sidebar-->
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <img src="..\images\body\icons\home-24.png">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-links">
+            <img src="..\images\body\icons\compass-24.png">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-links">
+            <img src="..\images\body\icons\shorts-icon.png">
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-links">
+            <img src="..\images\body\icons\subscriptions.png">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-links">
+            <img src="..\images\body\icons\library.png">
+            <div>Library</div>
+        </div>
+    </div>
+   
+  <!--Body-->
+    <main>
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq720.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\channels4_profile.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Pasoori</div>
+                        <div class="name">
+
+                            <p>Shae Gill &#9834;</p>
+                            <p>3.4M views &#x2022;6 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\luka.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo3.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Luka Doncic BEST @)SEASON MOMENTS!</div>
+                        <div class="name">
+
+                            <p>Golden Hoops</p>
+                            <p>203K views &#x2022;2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\cars.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo2.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Cars on the Road|Official Trailer|Disney+</div>
+                        <div class="name">
+
+                            <p>Pixar</p>
+                            <p>5.1M views &#x2022;11 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\eddie.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo1.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Why is 0!=1</div>
+                        <div class="name">
+
+                            <p>Eddie Woo</p>
+                            <p>14M views &#x2022;8 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\stepup.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo4.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Top 10 Dance Scenes from the Step Up Franchise</div>
+                        <div class="name">
+
+                            <p>MsMojo &#9834;</p>
+                            <p>2M views &#x2022;4 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\cpu.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo5.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">I Designed my own 16-bit CPU</div>
+                        <div class="name">
+
+                            <p>AstroSam</p>
+                            <p>426K views &#x2022;3 weeks ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\laptop.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo6.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">2 Screens-1 BIG Problem! </div>
+                        <div class="name">
+
+                            <p>Jarrod'sTech</p>
+                            <p>5.1M views ;1 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\train.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo7.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Riding on Japan's Firstt class Overnight train|West express Gin...
+                        </div>
+                        <div class="name">
+
+                            <p>Solo Solo Travel</p>
+                            <p>14M views &#x2022;2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq.webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo11.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Dhoolpet balapur Ganesh idols eyes painting making...
+                        </div>
+                        <div class="name">
+
+                            <p>YT VLOGS</p>
+                            <p>147 views &#x2022;1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq720 (1).webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo9.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">We were warned not to go
+                        </div>
+                        <div class="name">
+
+                            <p>PewDiePie</p>
+                            <p>149K views &#x2022;2 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq720 (2).webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo12.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Luka Doncic:Moments of Genius You'd Never expect 
+                        </div>
+                        <div class="name">
+
+                            <p>Growing Pains</p>
+                            <p>1M views &#x2022;2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq720 (3).webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo13.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">Women's Boulder final||Innsbruk 2022
+                        </div>
+                        <div class="name">
+
+                            <p>International federation</p>
+                            <p>303K views &#x2022;1 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-grid">
+                    <img class="thumbnail" src="..\images\body\hq720 (4).webp">
+                </div>
+
+                <div class="video-details">
+
+                    <div class="profile-image">
+                        <img src="..\images\body\icons\logo10.jpg">
+                    </div>
+                    <div class="video-description">
+                        <div class="video-title">$5 MILLION AI for FREE
+                        </div>
+                        <div class="name">
+
+                            <p>sentdex</p>
+                            <p>140K views &#x2022;4days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="video-preview">
+            <div class="thumbnail-grid">
+                <img class="thumbnail" src="..\images\body\hq720 (5).webp">
+            </div>
+
+            <div class="video-details">
+
+                <div class="profile-image">
+                    <img src="..\images\body\icons\logo14.jpg">
+                </div>
+                <div class="video-description">
+                    <div class="video-title">Royal Enfield Hunter 350 First Ride Review|The obvious... 
+                    </div>
+                    <div class="name">
+
+                        <p>ZidWheels</p>
+                        <p>191K views &#x2022;2 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-preview">
+            <div class="thumbnail-grid">
+                <img class="thumbnail" src="..\images\body\hqdefault.webp">
+            </div>
+
+            <div class="video-details">
+
+                <div class="profile-image">
+                    <img src="..\images\body\icons\logo15.jpg">
+                </div>
+                <div class="video-description">
+                    <div class="video-title">memes to watch at 3 am
+                    </div>
+                    <div class="name">
+
+                        <p>LEVELM4N</p>
+                        <p>2.9M views &#x2022;6 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </main>
+
+    <script>
+        
+        var setactive=document.getElementById("search-bar");
+        var search=document.getElementById("search-toggle");
+        console.log(setactive.style.display)
+        function togglesearch(){
+            
+              if (setactive.style.display=="none")
+            {
+                
+                search.style.display="flex";
+                
+               }
+               else{
+                search.style.display="none";
+               }
+           }
+            
+        function collapsearch(){
+            var search=document.getElementById("search-toggle");
+            if(search.style.display=="flex"){
+            search.style.display="none";}
+        }
+            
+    </script>
+</body>
+
+</html>
